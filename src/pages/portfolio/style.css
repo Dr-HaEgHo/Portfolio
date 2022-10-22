@@ -78,3 +78,23 @@
 .po_item .content a:hover {
     text-decoration: none;
 }
+
+.portfolio{
+    width:100%;
+    height: 80vh;
+}
+
+.port-swiper{
+    /* background: yellow; */
+    height: 100%;
+    width:100%;
+    margin: 0 0 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.each-slide{
+    width: 100%;
+    margin: auto;
+}

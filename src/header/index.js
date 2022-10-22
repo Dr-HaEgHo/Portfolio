@@ -13,19 +13,28 @@ const Headermain = () => {
     document.body.classList.toggle("ovhidden");
   };
 
-  return (
+  return ( 
     <>
       <header className="fixed-top site__header">
-        <div className="d-flex align-items-center justify-content-between">
+        <div className="header_header">
+          <div className="light"></div>
           <Link  className="navbar-brand nav_ac" to="/">
             {logotext}
           </Link>
           <div className="d-flex align-items-center">
-          <Themetoggle />
+          {/* <Themetoggle /> */}
           <button className="menu__button  nav_ac" onClick={handleToggle}>
             {!isActive ? <VscClose /> : <VscGrabber />}
           </button>
           
+          </div>
+          <div className="my_Links">
+           <Link>Skills</Link> 
+           <Link>Qualifications</Link> 
+           <Link>Services</Link> 
+           <Link>Showcase</Link>
+           <Link>Contact</Link>
+           <button className="download__cv">Download cv</button> 
           </div>
         </div>
 
@@ -38,10 +47,16 @@ const Headermain = () => {
                   <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
                   </li>
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
+                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Skills</Link>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
+                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Qualifications</Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Services</Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Showcase</Link>
                   </li>
                   <li className="menu_item">
                   <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
@@ -60,10 +75,10 @@ const Headermain = () => {
           </div>
         </div>
       </header>
-      <div className="br-top"></div>
+      {/* <div className="br-top"></div>
       <div className="br-bottom"></div>
       <div className="br-left"></div>
-      <div className="br-right"></div>
+      <div className="br-right"></div> */}
       
     </>
   );

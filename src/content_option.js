@@ -1,17 +1,17 @@
-const logotext = "JOHN";
+const logotext = "Home";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Timothy",
+    description: "I’m Timothy Awogbuyi data scientist _ Full stack devloper,currently working in Berlin",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I’m Timothy Awogbuyi",
     animated: {
         first: "I love coding",
         second: "I code cool websites",
-        third: "I develop mobile apps",
+        third: "I am a Frontend Developer",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    description: "I build fully responsive pixel-perfect UIs, create stunning interactions, and implement functionality with code",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
@@ -73,65 +73,35 @@ const services = [{
 ];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/800/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        desctiption: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "Avidmall.jpg",
+        title:"Ecommerce Website",
+        description: "This is an ecommerce website I built using React Js library and styled using CSS, JSX styling and MUI styles. Here, I managed the global states like cart, products, addToCart, removeFromCart, incrementQuantity, e.t.c. using reducer technique from Redux ToolKit, and also handled API requests with createAsyncThunk from ReduxToolkit. Handled form input and validation using formik & Yup and I consumed a dummy products' API which I used through out the website. ",
+        github: " https://github.com/Dr-HaEgHo/avid-todo",
+        demo:"https://avid-store.vercel.app/"
+    },{
+        img: "TodoApp.jpg",
+        title:"Todo App",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        github: "https://github.com/Dr-HaEgHo/admin-panel",
+        demo:"https://avid-todo.vercel.app/"
+    },{
+        img: "Adminpanel.jpg",
+        title:"Admin Panel",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        github: "https://github.com/Dr-HaEgHo/admin-panel",
+        demo:"https://admin-panel-lyart.vercel.app/"
+    },{
+        img: "restaurant.jpg",
+        title:"41 Restaurant",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        github: "https://github.com/Dr-HaEgHo/41-Eatery",
+        demo:"https://41-eatery.vercel.app/"
+    },{
+        img: "movies.jpg",
+        title:"Movies Search App",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        github: "https://github.com/Dr-HaEgHo/Movie-search-app",
+        demo:"https://movie-search-app-seven-xi.vercel.app/"
     },
 ];
 
@@ -148,12 +118,13 @@ const contactConfig = {
 
 const socialprofils = {
     github: "https://github.com",
-    facebook: "https://facebook.com",
+    // facebook: "https://facebook.com",
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",
-    youtube: "https://youtube.com",
-    twitch: "https://twitch.com",
+    // youtube: "https://youtube.com",
+    // twitch: "https://twitch.com",
 };
+
 export {
     meta,
     dataabout,
@@ -165,4 +136,4 @@ export {
     contactConfig,
     socialprofils,
     logotext,
-};
+}; 

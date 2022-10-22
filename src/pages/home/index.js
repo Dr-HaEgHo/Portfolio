@@ -4,6 +4,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
+import myself from "../../assets/images/myself.gif"
 
 export const Home = () => {
   return (
@@ -15,15 +16,17 @@ export const Home = () => {
           <meta name="description" content={meta.description} />
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center ">
-          <div
-            className="h_bg-image order-1 order-lg-2 h-100 "
-            style={{ backgroundImage: `url(${introdata.your_img_url})` }}
-          ></div>
-          <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
+          <div 
+            className="myself-gif"
+            // style={{ backgroundImage: `url(${introdata.your_img_url})` }}
+          >
+            <img src={myself} alt="my-self.png" />
+          </div>
+          <div className="text ">
             <div className="align-self-center ">
-              <div className="intro mx-auto">
-                <h2 className="mb-1x">{introdata.title}</h2>
-                <h1 className="fluidz-48 mb-1x">
+              <div className="intro">
+                <h2 className="my-name">{introdata.title}</h2> 
+                <h1 className="fluidz-48 type-text">
                   <Typewriter
                     options={{
                       strings: [
@@ -31,16 +34,16 @@ export const Home = () => {
                         introdata.animated.second,
                         introdata.animated.third,
                       ],
-                      autoStart: true,
+                      autoStart: true, 
                       loop: true,
                       deleteSpeed: 10,
                     }}
                   />
                 </h1>
-                <p className="mb-1x">{introdata.description}</p>
-                <div className="intro_btn-action pb-5">
+                <p className="my-description">{introdata.description}</p>
+                <div className="intro_btn-action pb-5 flex">
                   <Link to="/portfolio" className="text_2">
-                    <div id="button_p" className="ac_btn btn ">
+                    <div className="home-portfolio-btn">
                       My Portfolio
                       <div className="ring one"></div>
                       <div className="ring two"></div>
@@ -48,8 +51,8 @@ export const Home = () => {
                     </div>
                   </Link>
                   <Link to="/contact">
-                    <div id="button_h" className="ac_btn btn">
-                      Contact Me
+                    <div className="home-contact-btn">
+                      About Me
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
