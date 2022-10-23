@@ -3,7 +3,7 @@ import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import { logotext ,socialprofils } from "../content_option";
-import Themetoggle from "../components/themetoggle";
+// import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
@@ -29,12 +29,10 @@ const Headermain = () => {
           
           </div>
           <div className="my_Links">
-           <Link>Skills</Link> 
-           <Link>Qualifications</Link> 
-           <Link>Services</Link> 
-           <Link>Showcase</Link>
-           <Link>Contact</Link>
-           <button className="download__cv">Download cv</button> 
+           <Link to="/about" >Skills</Link> 
+           <Link to="/portfolio">Showcase</Link>
+           <Link to="/contact">Contact</Link>
+           <a href="resume.pdf" download="resume_Timothy_Awogbuyi" ><button type="submit" className="download__cv">Download cv</button> </a>
           </div>
         </div>
 

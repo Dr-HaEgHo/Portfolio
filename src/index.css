@@ -109,6 +109,7 @@ code {
 .showcase{
     width: 94%;
     margin: auto;
+    padding: 2rem 0 0  0
     /* background: green; */
 }
 
@@ -161,4 +162,75 @@ code {
     display: flex;
     align-items: center;
     gap: 1rem
+}
+
+@media (max-width:991px) {
+    .caro-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        /* background: green; */
+        /* gap: 2rem; */
+    }
+    .caro-cont-text h1{
+    font-size: 28px;
+    font-weight: 600;
+    }
+    
+    .caro-cont-text p{
+        font-family: Poppins, sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .caro-img{
+        width: 80%;
+        border-radius: 10px;
+        overflow: hidden;
+        aspect-ratio: 1.6;
+    }
+    .caro-cont {
+        width: 90%;
+        /* background: yellow; */
+        text-align: left;
+        margin: 22px  0 0 0;
+    }
+}
+
+@media (max-width:420px) {
+    .caro-container{
+        flex-direction: column;
+    }
+    .caro-cont-text h1{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
+    .caro-cont-text p{
+        font-family: Poppins, sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        text-align: justify;
+    }
+    .caro-img{
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        aspect-ratio: 1.6;
+    }
+    .caro-cont {
+        width: 90%;
+        /* background: yellow; */
+        text-align: left;
+        margin: 22px  0 0 0;
+    }
+    .caro-cont-buttons{
+        flex-direction: column;
+    }
+    .caro-cont-buttons button{
+        flex-direction: column;
+        width: 100%l
+    }
+
 }

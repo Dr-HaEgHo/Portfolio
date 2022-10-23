@@ -30,9 +30,10 @@ export const Portfolio = () => {
           <div className="portfolio">
           <Carousel
               className="port-swiper"
-              autoPlay={false}
+              autoPlay={true}
               infiniteLoop={true}
-              swipeable={true}
+              loop={true}
+              swipeable={true} 
               showStatus={false}
               showThumbs={false}
               // onSlideChange={() => console.log('slide change')}

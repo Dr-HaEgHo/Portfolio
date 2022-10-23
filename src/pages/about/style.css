@@ -5,10 +5,11 @@
 .table td,
 .table th {
     color: var(--text-color);
+    border-color: #352a4f;
 }
 
 .t_border {
-    border-color: var(--text-color) !important;
+    border-color: #352a4f !important;
 }
 
 .progress-title {
@@ -20,16 +21,16 @@
 
 .progress {
     height: 5px;
-    background: var(--secondary);
+    background: none;
     border-radius: 0;
-    box-shadow: none;
+    box-shadow: none; 
     margin-bottom: 30px;
     overflow: visible;
 }
 
 .progress .progress-bar {
     position: relative;
-    background: var(--text-color);
+    background: none;
     animation: animate-positive 2s;
     overflow: visible;
     opacity: 0.9;
@@ -37,12 +38,16 @@
 
 .progress .progress-value {
     position: absolute;
-    top: -30px;
+    top: -40px;
     right: 8px;
-    font-size: 17px;
+    font-size: 22px;
     font-weight: bold;
     font-style: italic;
     color: var(--text-color);
+}
+
+.color{
+    color: #352a4f;
 }
 
 @-webkit-keyframes animate-positive {
@@ -63,12 +68,13 @@
 
 .service__title {
     padding: 8px 0;
-    border-bottom: solid 2px var(--secondary-color);
+    border-bottom: solid 2px #352a4f;
 }
 
 .service-section .service-category-title {
     padding-bottom: 4px;
 }
+
 
 
 /*! CSS Used keyframes */

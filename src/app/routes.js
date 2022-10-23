@@ -15,7 +15,7 @@ const AnimatedSwitch = withRouter(({ location }) => (
       timeout={{
         enter: 400,
         exit: 400,
-      }}
+      }} 
       classNames="page"
       unmountOnExit
     >

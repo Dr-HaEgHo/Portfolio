@@ -9,6 +9,7 @@ import {
   skills,
   services,
 } from "../../content_option";
+import { ContactUs } from "../contact";
 
 export const About = () => {
   return (
@@ -21,7 +22,7 @@ export const About = () => {
         </Helmet>
         <Row className="mb-5 mt-3">
           <Col lg="8">
-            <h1 className="display-4 mb-4">About me</h1>
+            <h1 className="display-6 mb-4">About me</h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
@@ -37,7 +38,7 @@ export const About = () => {
         </Row>
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
+            <h3 className="color_sec py-4">Work Experience</h3>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
@@ -68,10 +69,12 @@ export const About = () => {
                     <div
                       className="progress-bar"
                       style={{
-                        width: `${data.value}%`,
+                        width: `${100}%`,
+                        background: "#352a4f",
+                        height: "3px"
                       }}
                     >
-                      <div className="progress-value">{data.value}%</div>
+                      <div className="progress-value">{data.icon}</div>
                     </div>
                   </div>
                 </div>
@@ -86,7 +89,7 @@ export const About = () => {
           <Col lg="7">
             {services.map((data, i) => {
               return (
-                <div className="service_ py-4" key={i}>
+                <div className="service_ py-4" key={i}> 
                   <h5 className="service__title">{data.title}</h5>
                   <p className="service_desc">{data.description}</p>
                 </div>
@@ -94,6 +97,7 @@ export const About = () => {
             })}
           </Col>
         </Row>
+        <ContactUs/>
       </Container>
     </HelmetProvider>
   );
