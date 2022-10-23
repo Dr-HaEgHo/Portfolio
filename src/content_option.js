@@ -74,19 +74,25 @@ const skills = [{
         value: 85,
         icon:<Icon icon="fontisto:github" />
     },
+    {
+        name: "Figma",
+        value: 85,
+        icon:<Icon icon="logos:figma" />
+    },
+    {
+        name: "Photoshop | Illustrator | inDesign | ",
+        value: 85,
+        icon:<Icon icon="fontisto:adobe" />
+    },
 ];
 
 const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Web Design",
+        description: "Creating beautiful, user-friendly, minimal, and scalable designs for development",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Frontend Web Development",
+        description: "Convert created UI designs and prototypes into responsive, accessible and user-friendly web applications while using up-to-date technologies in production. Also actively and effectively communicating and contributing to the team, handling and converting clients' requirements into effective and efficient solutions, and making necessary revisions as required",
     },
 ];
 
