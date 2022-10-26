@@ -31,8 +31,8 @@ const worktimeline = [{
     {
         jobtitle: "Front-end Developer",
         where: "SideHustle ",
-        date: "04 - 2021",
-        endDate:"2022",
+        date: "04 - 202",
+        endDate:"06 - 2022",
     },
 ];
 
