@@ -1,6 +1,6 @@
 {
-    "homepage": "http://ubaimutl.github.io/react-portfolio",
-    "name": "react-portfolio",
+    "homepage": "http://Dr-HaEgHo.github.io/portfolio",
+    "name": "portfolio",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -24,7 +24,7 @@
         "react-scripts": "4.0.1",
         "react-transition-group": "^4.4.2",
         "swiper": "^8.4.4",
-        "typewriter-effect": "^2.18.2",
+        "typewriter-effect": "^2.18.2", 
         "web-vitals": "^0.2.4"
     },
     "scripts": {
