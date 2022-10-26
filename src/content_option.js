@@ -1,4 +1,9 @@
 import { Icon } from '@iconify/react';
+import avidMall from '../src/assets/images/Avidmall.jpg'
+import adminPanel from '../src/assets/images/Adminpanel.jpg'
+import todoApp from '../src/assets/images/TodoApp.jpg'
+import restaurant from '../src/assets/images/restaurant.jpg'
+import movies from '../src/assets/images/movies.jpg'
 
 
 const logotext = "Home";
@@ -31,7 +36,7 @@ const worktimeline = [{
     {
         jobtitle: "Front-end Developer",
         where: "SideHustle ",
-        date: "04 - 202",
+        date: "04 - 2022",
         endDate:"06 - 2022",
     },
 ];
@@ -99,31 +104,31 @@ const services = [{
 ];
 
 const dataportfolio = [{
-        img: "Avidmall.jpg",
+        img: avidMall,
         title:"Ecommerce Website",
         description: "This is an ecommerce website I built using React Js library and styled using CSS, JSX styling and MUI styles. Here, I managed the global states like cart, products, addToCart, removeFromCart, incrementQuantity, e.t.c. using reducer technique from Redux ToolKit, and also handled API requests with createAsyncThunk from ReduxToolkit. Handled form input and validation using formik & Yup and I consumed a dummy products' API which I used through out the website. ",
         github: " https://github.com/Dr-HaEgHo/avid-todo",
         demo:"https://avid-store.vercel.app/"
     },{
-        img: "TodoApp.jpg",
+        img: todoApp,
         title:"Todo App",
         description: "A simple to-do app to handle daily tasks. All the data are handles in the local storage and all the data were made accessible within components through the use of props. I used ReactJs to build this along with CSS and conditional style rendering with JSX styling, to style the app. ",
         github: "https://github.com/Dr-HaEgHo/admin-panel",
         demo:"https://avid-todo.vercel.app/"
     },{
-        img: "Adminpanel.jpg",
+        img: adminPanel,
         title:"Admin Panel",
         description: "Admin panel for tracking statistics of a company's employees and clients, And a small store to display the company's prooduct. This was achieved with the use of Reactjs, Css, MUI styling for the layout and styling. Consumed data from a dummy API to which a request was made using Axios. Implemented a dynamic data chart with the use of Recharts. Routing with react router dom.",
         github: "https://github.com/Dr-HaEgHo/admin-panel",
         demo:"https://admin-panel-lyart.vercel.app/"
     },{
-        img: "restaurant.jpg",
+        img: restaurant,
         title:"41 Restaurant",
         description: "A simple single page application (SPA) that displays all the dishes available. Navigate through routes using React router dom, Consumed data from an API server which was requested using react fetch. Simple search feature on the products page, to get a new filtered array of products. Site built with React Js and JavaScript.",
         github: "https://github.com/Dr-HaEgHo/41-Eatery",
         demo:"https://41-eatery.vercel.app/"
     },{
-        img: "movies.jpg",
+        img: movies,
         title:"Movies Search App",
         description: "This is a simple app that displays movies from a movie API database. Built with React Js, react fetch, css styling",
         github: "https://github.com/Dr-HaEgHo/Movie-search-app",
