@@ -17,9 +17,15 @@ function _ScrollToTop(props) {
   }, [pathname]);
   return props.children;
 }
+
 const ScrollToTop = withRouter(_ScrollToTop);
 
-export default function App() {
+
+
+
+
+
+export default function App({staticContext}) {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       {/* <div className="cursor__dot">
@@ -32,7 +38,7 @@ export default function App() {
           outerScale={5}
         />
       </div> */}
-      <ScrollToTop>
+      <ScrollToTop context={{x:"y"}} >
         <Headermain />
         <AppRoutes />
       </ScrollToTop>

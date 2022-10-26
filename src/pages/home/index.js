@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
 import myself from "../../assets/images/myself.gif"
+// import mevid from "../../assets/images/mevid.mp4"
 
 export const Home = () => {
   return (
@@ -17,10 +18,15 @@ export const Home = () => {
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center ">
           <div 
-            className="myself-gif"
+            className="myself-gif" 
             // style={{ backgroundImage: `url(${introdata.your_img_url})` }}
           >
             <img src={myself} alt="my-self.png" />
+            {/* <video width={300} height={300} autoPlay loop >
+              <source src="../../assets/images/mevid.mp4" type="video/mp4"/>
+              <source src="mevid.mp4" type="video/mp4"/>
+            </video> */}
+            
           </div>
           <div className="text ">
             <div className="align-self-center ">

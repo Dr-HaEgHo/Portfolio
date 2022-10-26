@@ -29,7 +29,7 @@ const AnimatedSwitch = withRouter(({ location }) => (
     </CSSTransition>
   </TransitionGroup>
 ));
-
+ 
 function AppRoutes() {
   return (
     <div className="s_c">
