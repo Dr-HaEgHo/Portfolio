@@ -15,6 +15,8 @@ function _ScrollToTop(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+  console.log(props.children)
   return props.children;
 }
 
