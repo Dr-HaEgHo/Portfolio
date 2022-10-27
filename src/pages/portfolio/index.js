@@ -3,19 +3,12 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container} from "react-bootstrap";
 import { meta, dataportfolio } from "../../content_option";
-// import { Swiper, SwiperSlide } from 'swiper/react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import 'swiper/css';
 
 
 
-import 'swiper/swiper.min.css'
-import Showcase from "../../components/Showcase";
-// import 'swiper/css/navigation';
-// import 'swiper/modules/pagination/pagination.min.css'
-// import 'swiper/css/pagination';
-// import 'swiper/css/scrollbar';
+
 
 
 export const Portfolio = () => {
@@ -36,8 +29,6 @@ export const Portfolio = () => {
               swipeable={true} 
               showStatus={false}
               showThumbs={false}
-              // onSlideChange={() => console.log('slide change')}
-              // onSwiper={(swiper) => console.log(swiper)}
             >
               {
               dataportfolio?.map((item, i) => (
