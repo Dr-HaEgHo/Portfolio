@@ -49,7 +49,7 @@ const skills = [{
     {
         name: "React & Redux | Redux ToolKit",
         value: 85,
-        icon:<Icon icon="logos:react" />
+        icon: <Icon icon="logos:react" />
     },
     {
         name: "TypeScript",
