@@ -5,7 +5,7 @@ import { Container} from "react-bootstrap";
 import { meta, dataportfolio } from "../../content_option";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
+import Showcase from "../../components/Showcase.jsx"
 
 
 

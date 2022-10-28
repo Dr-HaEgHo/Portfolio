@@ -3,7 +3,8 @@ import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import { logotext ,socialprofils } from "../content_option";
-// import Themetoggle from "../components/themetoggle";
+// import Themetoggle from "../components/themetoggle"; 
+import CV from "../assets/images/resume.pdf"
 
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
@@ -33,7 +34,7 @@ const Headermain = () => {
            <Link to="/about" >Skills</Link> 
            <Link to="/portfolio">Showcase</Link>
            <Link to="/contact">Contact</Link>
-           <a href="resume.pdf" download="resume_Timothy_Awogbuyi" ><button type="submit" className="download__cv">Download cv</button> </a>
+           <a href={CV} download="resume_Timothy_Awogbuyi" ><button type="submit" className="download__cv">Download cv</button> </a>
           </div>
         </div>
 
@@ -43,23 +44,18 @@ const Headermain = () => {
               <div className="menu__container p-3">
                 <ul className="the_menu">
                   <li className="menu_item ">
-                  <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
+                  <Link  onClick={handleToggle} to="/" className="mb-4">Home</Link>
                   </li>
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Skills</Link>
+                    <Link  onClick={handleToggle} to="/about" className="mb-4"> Skills</Link>
                   </li>
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Qualifications</Link>
+                    <Link  onClick={handleToggle} to="/portfolio" className="mb-4"> Showcase</Link>
                   </li>
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Services</Link>
+                  <Link onClick={handleToggle} to="/contact" className="mb-4"> Contact</Link>
                   </li>
-                  <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Showcase</Link>
-                  </li>
-                  <li className="menu_item">
-                  <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
-                  </li>
+                  <a href="resume.pdf" download="resume_Timothy_Awogbuyi" ><button type="submit" className="download__cv">Download cv</button> </a>
                 </ul>
               </div>
             </div>
