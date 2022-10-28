@@ -1,5 +1,6 @@
 :root {
-    --bg-color: #000212;
+    /* --bg-color: #000212; */
+    --bg-color: green;
     --accent-color: #352a4f;
     --primary-color: #000212;
     --secondary-color: #fff;
