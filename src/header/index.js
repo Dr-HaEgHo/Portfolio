@@ -7,7 +7,7 @@ import { logotext ,socialprofils } from "../content_option";
 import CV from "../assets/images/resume.pdf"
 
 const Headermain = () => {
-  const [isActive, setActive] = useState("false");
+  const [isActive, setActive] = useState(true);
 
   const handleToggle = () => {
     setActive(!isActive);
@@ -44,16 +44,16 @@ const Headermain = () => {
               <div className="menu__container p-3">
                 <ul className="the_menu">
                   <li className="menu_item ">
-                  <Link  onClick={handleToggle} to="/" className="mb-4">Home</Link>
+                  <Link  onClick={handleToggle} to="/" className="mb-5">Home</Link>
                   </li>
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/about" className="mb-4"> Skills</Link>
+                    <Link  onClick={handleToggle} to="/about" className="mb-5"> Skills</Link>
                   </li>
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="mb-4"> Showcase</Link>
+                    <Link  onClick={handleToggle} to="/portfolio" className="mb-5"> Showcase</Link>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/contact" className="mb-4"> Contact</Link>
+                  <Link onClick={handleToggle} to="/contact" className="mb-5"> Contact</Link>
                   </li>
                   <a href="resume.pdf" download="resume_Timothy_Awogbuyi" ><button type="submit" className="download__cv">Download cv</button> </a>
                 </ul>
