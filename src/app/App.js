@@ -3,12 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
   useLocation,
-  withRouter,
+  // withRouter,
 } from "react-router-dom";
 import AppRoutes from "./routes";
 import Headermain from "../header";
 // import AnimatedCursor from "react-animated-cursor";
 import "./App.css";
+import { useNavigate } from "react-router";
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
@@ -20,7 +21,7 @@ function _ScrollToTop(props) {
   return props.children;
 }
 
-const ScrollToTop = withRouter(_ScrollToTop);
+
 
 
 
@@ -28,6 +29,9 @@ const ScrollToTop = withRouter(_ScrollToTop);
 // basename={process.env.PUBLIC_URL}
 
 export default function App({staticContext}) {
+
+  const ScrollToTop = useNavigate();
+
   return (
     <Router >
       {/* <div className="cursor__dot">
